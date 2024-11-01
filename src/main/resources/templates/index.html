@@ -7,6 +7,7 @@
     <title>GrowerTech</title>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/page.css">
 </head>
 <body class="h-screen bg-gray-100">
 <div class="flex h-full">
@@ -43,7 +44,6 @@
                   hx-swap="beforeend"
                   hx-target="#response-container"
                   hx-on="htmx:afterRequest: document.getElementById('message').value = '';">
-
                 <div class="flex items-center bg-white border border-gray-300 rounded-full p-2 shadow-sm">
                     <input id="message" name="message" class="bg-white text-gray-700 outline-none rounded-full py-2 px-4 w-full"
                            type="text" placeholder="Escreva sua mensagem...">
@@ -56,6 +56,15 @@
             </form>
         </div>
     </main>
+</div>
+
+<div class="chat-container">
+    <div class="message user-message"> <!-- Mensagem do usuário -->
+        <p>{{ userMessage }}</p>
+    </div>
+    <div class="message system-message"> <!-- Resposta do sistema -->
+        <p>{{ systemResponse }}</p>
+    </div>
 </div>
 </body>
 </html>
