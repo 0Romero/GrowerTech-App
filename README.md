@@ -1,6 +1,6 @@
 # GrowerTech API
 
-Esta é uma API RESTful para gerenciar clientes e gerar recomendações de produtos para uma empresa chamada GrowerTech.
+Esta é uma API RESTful para gerenciar clientes e gerar recomendações chamada GrowerTech.
 
 ## Tecnologias Utilizadas
 
@@ -9,7 +9,7 @@ Esta é uma API RESTful para gerenciar clientes e gerar recomendações de produ
 - Spring Data JPA
 - Flyway
 - Spring Security
-
+- Spring AI
 ## Funcionalidades
 
 - CRUD (Create, Read, Update, Delete) de clientes
@@ -21,13 +21,13 @@ Esta é uma API RESTful para gerenciar clientes e gerar recomendações de produ
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/growertech-api.git
+   git clone https://github.com/0Romero/GrowerTech-App
    ```
 
 2. Navegue até o diretório do projeto:
 
    ```bash
-   cd growertech-api
+   cd growertech-app
    ```
 
 3. Execute o projeto usando Maven:
