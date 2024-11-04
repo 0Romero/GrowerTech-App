@@ -7,7 +7,6 @@
     <title>GrowerTech</title>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/static/css/page.css">
 </head>
 <body class="h-screen bg-gray-100">
 <div class="flex h-full">
@@ -26,9 +25,9 @@
         <!-- Header -->
         <header class="flex items-center justify-between p-4 border-b bg-gray-50">
             <h2 class="text-xl font-semibold text-gray-700">Converse com GrowerTech</h2>
-            <div class="bg-green-600 text-white px-4 py-1 rounded-lg shadow-md text-sm">
-                Beta
-            </div>
+            <button onclick="window.location.href='/req/login'" class="bg-red-600 text-white px-4 py-1 rounded-lg shadow-md text-sm">
+                Sair
+            </button>
         </header>
         
         <!-- Response Container -->
@@ -56,15 +55,6 @@
             </form>
         </div>
     </main>
-</div>
-
-<div class="chat-container">
-    <div class="message user-message"> <!-- Mensagem do usuário -->
-        <p>{{ userMessage }}</p>
-    </div>
-    <div class="message system-message"> <!-- Resposta do sistema -->
-        <p>{{ systemResponse }}</p>
-    </div>
 </div>
 </body>
 </html>
